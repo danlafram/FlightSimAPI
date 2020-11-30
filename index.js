@@ -26,7 +26,7 @@ io.on('connection', (socket) => {
     setInterval(() => {
         socket.emit('pulse', {coordinates: coordinates} );
         coordinates._pulse();
-    }, 1000);
+    }, 2500);
 });
 
 http.listen(port, () => {
